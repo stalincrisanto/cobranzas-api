@@ -1,0 +1,6 @@
+@CobranzasApi_HostAddress = http://localhost:5125
+
+GET {{CobranzasApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
