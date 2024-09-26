@@ -31,7 +31,7 @@ public class ClientsController : ControllerBase
     [HttpGet("{identityCard}")]
     public ActionResult<ClientDto> GetCustomerById(string identityCard)
     {
-        var customer = _clientService.GetCustomerByIdentityCard(identityCard);
+        var customer = _clientService.GetClientByIdentityCard(identityCard);
         if (customer == null)
         {
             return NotFound(new { message = "El cliente no se encuentra en la base de datos.", status = 404 });

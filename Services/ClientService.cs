@@ -10,7 +10,7 @@ public class ClientService
         return JsonConvert.DeserializeObject<List<ClientModel>>(jsonData);
     }
 
-    public ClientModel GetCustomerByIdentityCard(string identityCard){
+    public ClientModel GetClientByIdentityCard(string identityCard){
         var customers = GetAllClients();
         return customers.FirstOrDefault(c => c.IdentityCard == identityCard);
     }
