@@ -1,24 +1,62 @@
 [
   {
     "id": "id1",
+    "identityCard": "1723401715",
     "name": "Stalin Oswaldo",
     "lastName": "Crisanto Caiza",
     "phone": "0995077348",
     "email": "stalincrisanto@hotmail.com",
     "debt": {
-        "totalValue":12500,
-        "time": "12 meses"
+      "totalValue": 12500,
+      "expiredDays": 120
     }
   },
   {
-    "id": "id1",
-    "name": "Stalin Oswaldo",
-    "lastName": "Crisanto Caiza",
-    "born": "09-10-1996",
-    "email": "stalincrisanto@hotmail.com",
+    "id": "id2",
+    "identityCard": "1708051311",
+    "name": "Luis Oswaldo",
+    "lastName": "Crisanto Oña",
+    "phone": "0983481300",
+    "email": "luiscrisanto@hotmail.com",
     "debt": {
-        "totalValue":12500,
-        "time": "12 meses"
+      "totalValue": 10000,
+      "expiredDays": 100
+    }
+  },
+  {
+    "id": "id3",
+    "identityCard": "1708102718",
+    "name": "Miriam Mónica",
+    "lastName": "Caiza Llumiquinga",
+    "phone": "0996901618",
+    "email": "miriam@hotmail.com",
+    "debt": {
+      "totalValue": 122500,
+      "expiredDays": 150
+    }
+  },
+  {
+    "id": "id4",
+    "identityCard": "1724689623",
+    "name": "Cinthya Vanessa",
+    "lastName": "Oña Suntaxi",
+    "phone": "0994735950",
+    "email": "vanessa@hotmail.com",
+    "debt": {
+      "totalValue": 12500,
+      "expiredDays": 10
+    }
+  },
+  {
+    "id": "id5",
+    "identityCard": "1756897412",
+    "name": "Deicy Natalia",
+    "lastName": "Crisanto Caiza",
+    "phone": "0985699547",
+    "email": "deicy@hotmail.com",
+    "debt": {
+      "totalValue": 12500,
+      "expiredDays": 200
     }
   }
 ]

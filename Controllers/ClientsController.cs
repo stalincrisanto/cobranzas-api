@@ -11,28 +11,30 @@ public class ClientsController : ControllerBase
         _clientService = new ClientService();
     }
 
-    [HttpGet ("allClients")]
+    [HttpGet("allClients")]
     public ActionResult<List<ClientDto>> GetClients()
     {
         var clients = _clientService.GetAllClients();
         var clientDtos = clients.Select(c => new ClientDto
         {
             Id = c.Id,
+            IdentityCard = c.IdentityCard,
             Name = c.Name,
             LastName = c.LastName,
-            Email = c.Email
+            Email = c.Email,
+            Phone = c.Phone
         }).ToList();
 
         return Ok(clientDtos);
     }
 
-    [HttpGet("{idCard}")]
-    public ActionResult<ClientDto> GetCustomerById(string idCard)
+    [HttpGet("{identityCard}")]
+    public ActionResult<ClientDto> GetCustomerById(string identityCard)
     {
-        var customer = _clientService.GetCustomerByIdCard(idCard);
+        var customer = _clientService.GetCustomerByIdentityCard(identityCard);
         if (customer == null)
         {
-            return NotFound();
+            return NotFound(new { message = "El cliente no se encuentra en la base de datos.", status = 404 });
         }
         return Ok(customer);
     }
